@@ -490,7 +490,7 @@ class SocketData:
                 raise RuntimeError('proxy not found: %s' % pxname)
 
         # Register filters
-        for iid in proxy_iid_map.itervalues():
+        for iid in proxy_iid_map.values():
             self._filters.add((iid, -1, -1))
 
     def update_info(self):
